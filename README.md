@@ -1,30 +1,45 @@
-# React + TypeScript + Vite
+# これなに
+React+TypeScript+Viteでフロント(SPA)開発するためのベースプロジェクト
 
-This template provides a minimal setup to get React working in Vite with HMR and some ESLint rules.
+# 主要技術
+| 名称 | バージョン | 主な用途 |
+| :--- | :--- | :--- |
+| React | 18.2.0 | フロントFW |
+| TypeScript | 5.2.2 | フロント言語 |
+| TanStack Router | 1.16.5 | File Based Routing |
+| TanStack Query | 5.22.2 | Data Fetching<br/>Suspense |
+| Biome | 1.5.3 | Linter<br/>Formatter |
+| Mock Service Worker | 2.2.1 | API Mocking |
+| Node | 20.10.0 | JavaScriptランタイム環境 |
 
-Currently, two official plugins are available:
+# 前提
+1. Visual Studio Code
+2. Volta
 
-- [@vitejs/plugin-react](https://github.com/vitejs/vite-plugin-react/blob/main/packages/plugin-react/README.md) uses [Babel](https://babeljs.io/) for Fast Refresh
-- [@vitejs/plugin-react-swc](https://github.com/vitejs/vite-plugin-react-swc) uses [SWC](https://swc.rs/) for Fast Refresh
+- Visual Studio Codeダウンロード  
+https://code.visualstudio.com/download
 
-## Expanding the ESLint configuration
-
-If you are developing a production application, we recommend updating the configuration to enable type aware lint rules:
-
-- Configure the top-level `parserOptions` property like this:
-
-```js
-export default {
-  // other rules...
-  parserOptions: {
-    ecmaVersion: 'latest',
-    sourceType: 'module',
-    project: ['./tsconfig.json', './tsconfig.node.json'],
-    tsconfigRootDir: __dirname,
-  },
-}
+- Voltaインストール
+```
+% curl https://get.volta.sh | bash
 ```
 
-- Replace `plugin:@typescript-eslint/recommended` to `plugin:@typescript-eslint/recommended-type-checked` or `plugin:@typescript-eslint/strict-type-checked`
-- Optionally add `plugin:@typescript-eslint/stylistic-type-checked`
-- Install [eslint-plugin-react](https://github.com/jsx-eslint/eslint-plugin-react) and add `plugin:react/recommended` & `plugin:react/jsx-runtime` to the `extends` list
+# 開発環境起動
+```
+% yarn install
+% yarn dev
+```
+
+# Build
+```
+% yarn build
+```
+
+# TODO
+- ヘッドレスUI
+  - shadcn(tailWind系) / ark(panda系)
+- スタイル
+  - Tailwind or Panda
+- Vitest
+- Storybook
+  - 不要かも
