@@ -1,3 +1,3 @@
 export const API_URL = {
-    GET_POSTS: '/posts'
+  GET_POSTS: '/posts',
 }

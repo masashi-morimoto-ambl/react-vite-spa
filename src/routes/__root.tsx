@@ -5,7 +5,7 @@ import { QueryClient } from '@tanstack/react-query'
 export const Route = createRootRouteWithContext<{
   queryClient: QueryClient
 }>()({
-  component: () => <MainTemplate/>,
+  component: () => <MainTemplate />,
   notFoundComponent: () => {
     return <p>見つかりませんでした！</p>
   },
