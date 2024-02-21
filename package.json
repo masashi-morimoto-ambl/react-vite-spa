@@ -12,7 +12,10 @@
     "prepare": "husky"
   },
   "lint-staged": {
-    "*.{js,ts,tsx}": ["yarn lint", "yarn format"]
+    "*.{js,ts,tsx}": [
+      "yarn lint",
+      "yarn format"
+    ]
   },
   "dependencies": {
     "@tanstack/react-query": "^5.22.2",
@@ -34,5 +37,10 @@
     "msw": "^2.2.1",
     "typescript": "^5.2.2",
     "vite": "^5.1.0"
+  },
+  "volta": {
+    "node": "20.10.0",
+    "npm": "10.2.3",
+    "yarn": "4.0.2"
   }
 }
